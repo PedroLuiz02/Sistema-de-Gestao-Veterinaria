@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: none;
+}
+
+#body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#Container {
+  background-color: #FFF;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 18rem;
+  height: 22rem;
+}
