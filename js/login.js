@@ -1,3 +1,3 @@
 function Logar(){
-  window.location.href = "landing.html";
+  window.location.href = "html/landing.html";
 }
