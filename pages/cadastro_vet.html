@@ -41,7 +41,7 @@
         <input type="text" id="especialidadeVet" class="form-control" placeholder="Especialidade" autocomplete="off" required>
       </div>
       <div class="col-md-2 d-grid">
-          <button id="btnSalvar" class="btn btn-success" type="button" onclick="cadastrarAluno()">Salvar</button>
+          <button id="btnSalvar" class="btn btn-success" type="button" onclick="cadastrarVet()">Salvar</button>
       </div>
     </form>
     <br>
@@ -54,12 +54,12 @@
           <th scope="col">Especialidade</th>
           <th class="action" scope="col">Ações</th>
       </thead>
-      <tbody class="table-group-divider" id="VetTBody">
+      <tbody class="table-group-divider" id="vetTBody">
       </tbody>
     </table>
   </div>
 
-  <div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="EditModalLabel" aria-hidden="true">
+  <div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="EditModalLabel">
     <div class="modal-dialog">
       <div class="modal-content">
       
@@ -76,7 +76,7 @@
             </div>
             <div class="mb-3">
               <label for="M_CRMVvet" class="form-label">CRMV</label>
-              <input type="text" class="form-control" id="M_CRMVvet" required>
+              <input type="text" class="form-control" id="M_vetCRMV" required>
             </div>
             <div class="mb-3">
               <label for="M_especialidadeVet" class="form-label">Especialidade</label>
@@ -94,6 +94,7 @@
     </div>
   </div>
 
+  <script src="../src/js/cadastrar_vet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
