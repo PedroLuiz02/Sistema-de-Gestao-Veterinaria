@@ -43,8 +43,8 @@ nomeAnimal.addEventListener('keyup', () => {
   }
 })
 
-sexoAnimal.addEventListener('keyup', () => {
-  if (sexoAnimal.value.length <= 2) {
+sexoAnimal.addEventListener('change', () => {
+  if (sexoAnimal.value === '') {
     sexoAnimal.setAttribute('style', 'border-color: red')
     validSexo = false
   } else {

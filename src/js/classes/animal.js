@@ -4,6 +4,12 @@ export class Animal {
     this.especie = especie;
     this.raca = raca;
     this.idade = idade;
+    this.peso = peso;
     this.tutor = tutor;
+    this.historico = [];
+  }
+
+  adicionarConsulta(consulta) {
+    this.historico.push(consulta);
   }
 }

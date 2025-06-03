@@ -35,7 +35,11 @@
         <input type="text" id="nomeAnimal" class="form-control" placeholder="Nome" autocomplete="off" required>
       </div>
       <div class="col-md-3">
-        <input type="text" id="sexoAnimal" class="form-control" placeholder="Sexo" autocomplete="off" required>
+        <select class="form-select" id="sexoAnimal" aria-label="Floating label select example" aria-placeholder="Sexo" required>
+          <option value="">Sexo</option>
+          <option value="Fêmea">Fêmea</option>
+          <option value="Macho">Macho</option>
+        </select>
       </div>
       <div class="col-md-3">
         <input type="text" id="especieAnimal" class="form-control" placeholder="Especie" autocomplete="off" required>
@@ -92,7 +96,11 @@
             </div>
             <div class="mb-3">
               <label for="M_sexoAnimal" class="form-label">Sexo</label>
-              <input type="text" class="form-control" id="M_sexoAnimal" required>
+              <select class="form-select" id="M_sexoAnimal" aria-label="Floating label select example" aria-placeholder="Sexo" required>
+                <option value="">Sexo</option>
+                <option value="Fêmea">Fêmea</option>
+                <option value="Macho">Macho</option>
+              </select>
             </div>
             <div class="mb-3">
               <label for="M_especieAnimal" class="form-label">Especie</label>

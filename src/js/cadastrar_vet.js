@@ -31,13 +31,22 @@ nomeVet.addEventListener('keyup', () => {
   }
 })
 
+vetCRMV.addEventListener('input', () => {
+  let value = vetCRMV.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+  if (value.length > 2) {
+    value = value.slice(0, 2) + '-' + value.slice(2);
+  }
+  vetCRMV.value = value;
+});
+
 vetCRMV.addEventListener('keyup', () => {
-  if (vetCRMV.value.length <= 2) {
-    vetCRMV.setAttribute('style', 'border-color: red')
-    validCRMV = false
+  let regexCRMV = /^[A-Z]{2}-\d{4,5}$/;
+  if (regexCRMV.test(vetCRMV.value)) {
+    vetCRMV.style.borderColor = 'green';
+    validCRMV = true;
   } else {
-    vetCRMV.setAttribute('style', 'border-color: green')
-    validCRMV = true
+    vetCRMV.style.borderColor = 'red';
+    validCRMV = false;
   }
 })
 
@@ -51,6 +60,7 @@ especialidadeVet.addEventListener('keyup', () => {
   }
 })
 
+/** Função para cadastro de Veterinários */
 function cadastrarVet() {
     if (validNome && validCRMV && validEspecialidade) {
       itens = JSON.parse(localStorage.getItem('listaVet')) || []
