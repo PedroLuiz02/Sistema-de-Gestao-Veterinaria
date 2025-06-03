@@ -37,5 +37,3 @@ export class Clinica {
   }
 }
 
-localStorage.setItem("clinica", JSON.stringify(clinica));
-
